@@ -4,19 +4,20 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <h1>BOOKS</h1>  
             <div class="row g-3 mt-3">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of books">
 
                     <div class="card" style="width: 18rem;">
-                        <img height="300px" width="200px" src="https://b9r8e6p9.stackpathcdn.com/app/uploads/2021/03/This-Tender-Land_SS.jpg" class="card-img-top" alt="...">
+                      <h5 class="card-title">{{i.title}}</h5>
+                        <img height="300px" width="200px" src={{i.image}} class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">THIS TENDER LAND</h5>
-                          <p class="card-text">WILLIAM KENT KRUEGER</p>
+                          <p class="card-text">{{i.author}}</p>
+                          <p class="card-text">{{i.price}}</p>
                           <a href="#" class="btn btn-primary">VIEW MORE</a>
                         </div>
                       </div>
 
                 </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                <!-- <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
 
                     <div class="card" style="width: 18rem;">
                         <img height="300px" width="200px" src="https://m.media-amazon.com/images/I/814Ynk2xy8S.jpg" class="card-img-top" alt="...">
@@ -145,7 +146,7 @@
                           <p class="card-text">MICHAEL PEARL</p>
                           <a href="#" class="btn btn-primary">VIEW MORE</a>
                         </div>
-                      </div>
+                      </div> -->
 
             </div>
         </div>
