@@ -7,22 +7,22 @@
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">NAME</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="name" [(ngModel)]="name" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">BOOK TITLE</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="title" [(ngModel)]="title" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">DATE OF ISSUE</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="doi" [(ngModel)]="doi" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">MEMBER NUMBER</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="member" [(ngModel)]="member" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <a class="btn btn-success" href="">SUBMIT</a>
+                    <button class="btn btn-success" (click)="issue()">SUBMIT</button>
                 </div>
             </div>
         </div>
