@@ -19,7 +19,7 @@ export class AddBookComponent {
 
   add=()=>
   {
-    let add:any={
+    let addbook:any={
       "title":this.title,
       "author":this.author,
       "desc":this.desc,
@@ -30,6 +30,6 @@ export class AddBookComponent {
       "price":this.price,
       "img":this.img
     }
-    console.log(add)
+    console.log(addbook)
   }
 }
