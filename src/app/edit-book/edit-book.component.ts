@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class EditBookComponent {
 
+  title=""
+
+  edit=()=>{
+    let editbook:any={
+      "title":this.title
+    }
+    console.log(editbook)
+  }
 }
