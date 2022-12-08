@@ -9,8 +9,48 @@
                     <input type="text" name="title" [(ngModel)]="title" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-primary" (click)="search()">SEARCH</button>
+                    <button class="btn btn-primary" (click)="readValues()">SEARCH</button>
                 </div>
+            </div>
+            <div class="row g-3 mt-3" *ngFor="let i of searchdata">
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">AUTHOR</label>
+                    <input type="text" name="author" value={{i.author}}  class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">DESCRIPTION</label>
+                    <textarea name="descr" value={{i.descr}} cols="30" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">PUBLISHER</label>
+                    <input type="text" name="publish" value={{i.publish}} class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">LANGUAGE</label>
+                    <input type="text" name="lang" value={{i.lang}} class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">DISTRIBUTOR</label>
+                    <input type="text" name="dist" value={{i.dist}} class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">RELEASED YEAR</label>
+                    <input type="text" name="released" value={{i.released}} class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">PRICE</label>
+                    <input type="text" name="price" value={{i.price}}  class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">UPLOAD IMAGE</label>
+                    <input type="text" name="img" value={{i.img}} class="form-control">
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="deletebuttonclick(i.id)" class="btn btn-danger">DELETE</button>
+                </div>
+
             </div>
         </div>
     </div>

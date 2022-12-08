@@ -14,7 +14,7 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">DESCRIPTION</label>
-                    <textarea name="desc" [(ngModel)]="desc" cols="30" rows="5" class="form-control"></textarea>
+                    <textarea name="descr" [(ngModel)]="descr" cols="30" rows="5" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">PUBLISHER</label>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">RELEASED YEAR</label>
-                    <input type="text" name="release" [(ngModel)]="release" class="form-control">
+                    <input type="text" name="released" [(ngModel)]="released" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">PRICE</label>
@@ -38,11 +38,11 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">UPLOAD IMAGE</label>
-                    <input type="file" name="img" [(ngModel)]="img" class="form-control">
+                    <input type="text" name="img" [(ngModel)]="img" class="form-control">
                 </div>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="add()" class="btn btn-success">ADD</button>
+                    <button (click)="readValues()" class="btn btn-success">ADD</button>
                 </div>
             </div>
         </div>
